@@ -21,30 +21,30 @@ module.exports = {
     name: {
       type: 'string',
       required: true,
-      message: 'Project name',
+      message: '请输入项目名称:',
     },
     description: {
       type: 'string',
       required: false,
-      message: 'Project description',
-      default: 'A Vue.js project',
+      message: '项目介绍',
+      default: 'sheyude project',
     },
     author: {
       type: 'string',
-      message: 'Author',
+      message: '作者',
     },
     build: {
       type: 'list',
-      message: 'Vue build',
+      message: 'Vue 编译模式',
       choices: [
         {
-          name: 'Runtime + Compiler: recommended for most users',
+          name: '运行时+编译器：建议大多数用户使用',
           value: 'standalone',
           short: 'standalone',
         },
         {
           name:
-            'Runtime-only: about 6KB lighter min+gzip, but templates (or any Vue-specific HTML) are ONLY allowed in .vue files - render functions are required elsewhere',
+            '仅适用于运行时间：最小+ gzip约轻6KB，但模板（或任何特定于Vue的HTML）只能在.vue文件中使用 - 其他位置需要渲染功能',
           value: 'runtime',
           short: 'runtime',
         },
@@ -52,7 +52,7 @@ module.exports = {
     },
     router: {
       type: 'confirm',
-      message: 'Install vue-router?',
+      message: '是否安装 vue-router?',
     },
     lint: {
       type: 'confirm',
