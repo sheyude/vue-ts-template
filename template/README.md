@@ -4,18 +4,20 @@
 ``` bash
 
 # Install project dependencies
-npm install
+yarn
 
 # serve with hot reload at localhost:8080
-npm run dev
+yarn dev
 
 # build for production with minification
-npm run build
+yarn build
 
 ```
 
 ## change log
 
-2018-04-12
+```
+chromedriver 安装失败
+```
 
-升级到webpack4
+copyright@wenquan.huang@magicwindow.cn
