@@ -56,33 +56,34 @@ module.exports = {
     },
     lint: {
       type: 'confirm',
-      message: 'Use ESLint to lint your code?',
+      message: '使用 TS 必须启用 ESLint',
     },
     lintConfig: {
       when: 'lint',
       type: 'list',
-      message: 'Pick an ESLint preset',
+      message: '选择一个 ESLint 预设',
       choices: [
         {
-          name: 'Standard (https://github.com/standard/standard)',
+          name: '推荐 (使用模板配置)',
+          value: 'none',
+          short: 'none',
+        },
+        {
+          name: '使用 Standard (https://github.com/standard/standard)',
           value: 'standard',
           short: 'Standard',
         },
         {
-          name: 'Airbnb (https://github.com/airbnb/javascript)',
+          name: '使用 Airbnb (https://github.com/airbnb/javascript)',
           value: 'airbnb',
           short: 'Airbnb',
         },
-        {
-          name: 'none (configure it yourself)',
-          value: 'none',
-          short: 'none',
-        },
+        
       ],
     },
     unit: {
       type: 'confirm',
-      message: 'Set up unit tests',
+      message: '设置单元测试',
     },
     runner: {
       when: 'unit',
@@ -113,20 +114,20 @@ module.exports = {
     autoInstall: {
       type: 'list',
       message:
-        'Should we run `npm install` for you after the project has been created? (recommended)',
+        '项目创建后，我们应该为您运行“NPM安装”吗？（推荐）',
       choices: [
         {
-          name: 'Yes, use NPM',
+          name: '使用 NPM',
           value: 'npm',
           short: 'npm',
         },
         {
-          name: 'Yes, use Yarn',
+          name: '使用Yarn',
           value: 'yarn',
           short: 'yarn',
         },
         {
-          name: 'No, I will handle that myself',
+          name: '不，我自己处理。',
           value: false,
           short: 'no',
         },
