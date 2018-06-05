@@ -3,7 +3,7 @@
 import { Vue, Component } from 'vue-property-decorator'
 
 @Component({})
-export default class FilterItem extends Vue {
+export default class renderItem extends Vue {
     name:'RC'
     render(createElement){
         return createElement(
