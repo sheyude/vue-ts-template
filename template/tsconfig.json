@@ -12,6 +12,7 @@
     },
     "jsx": "preserve",
     "jsxFactory": "h",
+    "strict": true,
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "allowJs": true,

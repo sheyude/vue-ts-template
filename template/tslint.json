@@ -1,6 +1,11 @@
 {
     "extends": "tslint-config-standard",
     "globals": {
-      "require": true
+      "require": false
+    },
+    "rules": {
+      "no-consecutive-blank-lines":false,
+      "property-declaration": false,
+      "parameter":false
     }
   }

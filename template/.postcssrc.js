@@ -4,7 +4,7 @@ module.exports = {
   "plugins": {
     "postcss-import": {},
     "postcss-url": {},
-    "postcss-cssnext": {},
+    "postcss-preset-env": {},
     "postcss-aspect-ratio-mini": {},
     "postcss-px-to-viewport": {
       viewportWidth: 375,
@@ -15,7 +15,7 @@ module.exports = {
       minPixelValue: 1,
       mediaQuery: false
     },
-    "gulp-sass":{},
+    // "gulp-sass":{},
 
     "postcss-viewport-units": {},
     "cssnano": {
@@ -23,5 +23,5 @@ module.exports = {
       autoprefixer: false,
       "postcss-zindex": false
     }
-  }
+      }
 }

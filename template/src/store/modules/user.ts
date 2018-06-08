@@ -8,7 +8,7 @@ let state = {
 const mutations = {}
 
 const getters = {
-  info: state => state.info
+  info: (state:any) => state.info
 }
 
 export default {

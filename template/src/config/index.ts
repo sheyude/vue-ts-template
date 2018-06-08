@@ -1,10 +1,6 @@
-let urlBase
+let urlBase:any
 
 declare var process: any;
-
-
-
-
 // 线上生产环境
 if(process.env.NODE_EVENT == 'prod'){
   if(process.env.NODE_LANG == 'en'){
@@ -22,15 +18,6 @@ if(process.env.NODE_EVENT == 'prod'){
     urlBase = "http://merculet-mgnt-cn.liaoyantech.cn"
   }
 }
-
-
-console.log(`${process.env.NODE_EVENT}`,'env')
-console.log(`${process.env.NODE_LANG}`,'lang')
-console.log(urlBase,'urlBase')
-
-
-
-
 
 export {
     urlBase,

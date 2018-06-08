@@ -25,7 +25,7 @@ const i18n = new VueI18n({
 /* eslint-disable no-new */
 const init = new Vue({
   el: '#app',
-  i18n,
+  // i18n,
   store,
   router,
   render: h => h(App)

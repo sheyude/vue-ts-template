@@ -54,7 +54,7 @@ class Http {
    * @returns {Promise}
    * @constructor
    */
-  async httpGet(url, resData = {}) {
+  async httpGet(url:string, resData = {}) {
     // 创建一个promise对象
     // resData = Object.assign(resData, this.locale)
     try {
@@ -73,7 +73,7 @@ class Http {
    * @returns {Promise}
    * @constructor
    */
-  async httpPost(url, resData = {}) {
+  async httpPost(url:string, resData = {}) {
     // 创建一个promise对象
 
     try {
@@ -90,39 +90,9 @@ class Http {
 
   }
 
-  /**
-   * formDate
-   */
+  
 
-  async formPost(url, resData = {}) {
-    // 创建一个promise对象
-    let formDate=new FormData();
-    for(let i in resData){
-      formDate.append(i,resData[i])
-    }
-    try {
-      // resData = Object.assign(resData, this.locale)
-      let { data } = await axios.post(
-        url,
 
-        formDate,
-
-        {
-          headers: {
-            'Content-type': 'application/x-www-form-urlencoded'
-          }
-        }
-      );
-      if (data.code == 500) {
-        console.error(500);
-        //router.push('/')
-      }
-      return data;
-    } catch (error) {
-      console.log(error)
-    }
-
-  }
 
   get locale() {
     return {
