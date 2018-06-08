@@ -9,5 +9,8 @@
   },
   "devDependencies": {
     "vue-cli": "^2.8.1"
+  },
+  "dependencies": {
+    "axios": "^0.18.0"
   }
 }

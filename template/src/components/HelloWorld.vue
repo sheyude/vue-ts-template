@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <h1>{{$t('aa.aa')}}</h1>
     <p>mixin 数据 ：{{ testMixinArg }}</p>
     <p>store 数据 ：{{ info.data }}</p>
     <JSXRC></JSXRC>
@@ -14,10 +15,10 @@
 
 import { Component, Vue } from 'vue-property-decorator'
 import JSXRC from '@/components/renderComponent.vue'
-import RC from '@/components/testrender.ts'
+import RC from '../components/testrender'
 import TestMixin from '../mixins/test-mixin'
 import { Getter } from 'vuex-class'
-
+import Api from '../api/index'
 @Component({
   components: {
     JSXRC,
@@ -31,6 +32,11 @@ export default class HelloWorld extends Vue {
   msg: string = 'Vue-Typescript'
   text: Boolean = false
 
+  async created () {
+    let data = await Api.sign()
+    console.log(data)
+  }
+
   mounted () {
 
   }
@@ -41,22 +47,12 @@ export default class HelloWorld extends Vue {
 }
 </script>
 
-<style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
+<style lang="less" scoped>
+  .hello{
+    font-size: 16px;
+    h1{
+      color: red;
+    }
+  }
 </style>
+

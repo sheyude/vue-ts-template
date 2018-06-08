@@ -7,13 +7,12 @@ class StorageService {
      * @param value 需要存的值
      * @param key 需要存key名字
      */
-    set(value: any, key: string) {
+    set(key: string, value: any) {
       try {
         // 把里面的值转换成json对象
         value = JSON.stringify(value);
       } catch (e) {
         // 抛出一个错误
-        // console.error(e);
         value = value;
       }
   
@@ -32,7 +31,6 @@ class StorageService {
         try {
           value = JSON.parse(value);
         } catch (e) {
-          // console.error(e);
           value = value;
         }
       }
