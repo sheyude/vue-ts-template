@@ -2,7 +2,7 @@
 ## 使用
 
 ```
-vue init vue init sheyude/vue-ts-template <project-name>
+vue init sheyude/vue-ts-template <project-name>
 ```
 
 
