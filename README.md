@@ -10,8 +10,10 @@ vue init sheyude/vue-ts-template <project-name>
 ## change log
 
 2018.6.9
-- 从写webpack 配置 支持npm 安装
+- 重写webpack 配置 支持npm 安装
 - tsx暂不做支持
+- 添加对vw支持
+- 相关依赖做最新调整
 
 2018.6.8
 - 添加双语

@@ -1,21 +1,27 @@
-let urlBase:any
 
-declare var process: any;
+declare let process:{
+  env:{
+    NODE_EVENT:string,
+    NODE_LANG:string
+  }
+};
+
+let urlBase:string
 // 线上生产环境
 if(process.env.NODE_EVENT == 'prod'){
   if(process.env.NODE_LANG == 'en'){
     // 线上生产环境 国外
-    urlBase = "https://merculet-mgnt.merculet.io"
+    urlBase = ""
   }else{
     // 线上生产环境 国内
-    urlBase = "https://mb-mgnt.magicwindow.cn"
+    urlBase = ""
   }
 }else{
   // 测试版或者开发板
   if(process.env.NODE_LANG == 'en'){
-    urlBase = "http://merculet-mgnt.liaoyantech.cn"
+    urlBase = ""
   }else{
-    urlBase = "http://merculet-mgnt-cn.liaoyantech.cn"
+    urlBase = ""
   }
 }
 
