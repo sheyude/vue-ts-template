@@ -9,6 +9,10 @@ vue init sheyude/vue-ts-template <project-name>
 
 ## change log
 
+2018.6.9
+- 从写webpack 配置 支持npm 安装
+- tsx暂不做支持
+
 2018.6.8
 - 添加双语
 - 封装axios
@@ -18,5 +22,10 @@ vue init sheyude/vue-ts-template <project-name>
 
 2018.6.5
 - 添加对添加对vw支持
+
+
+## help
+
+[如果引用第三方库参考链接](https://segmentfault.com/a/1190000012486378)
 
 copyright@wenquan.huang@magicwindow.cn

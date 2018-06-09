@@ -55,7 +55,9 @@ module.exports = {
           {
             loader: 'ts-loader',
             options: {
-              appendTsSuffixTo: [/\.vue$/]
+              appendTsSuffixTo: [/\.ts\.vue$/],
+              appendTsxSuffixTo: [/\.tsx\.vue$/]
+              // appendTsSuffixTo: [/\.vue$/]
             }
           }
         ],
