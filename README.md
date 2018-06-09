@@ -14,6 +14,8 @@ vue init sheyude/vue-ts-template <project-name>
 - tsx暂不做支持
 - 添加对vw支持
 - 相关依赖做最新调整
+- 路由修改为按需加载
+- 添加组件库 muse-ui
 
 2018.6.8
 - 添加双语

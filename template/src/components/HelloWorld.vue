@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1></h1>
+    <mu-button color="primary">Primary</mu-button>
     <p>mixin 数据 ：</p>
     <p>store 数据 ：</p>
     <RC></RC>

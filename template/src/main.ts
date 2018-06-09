@@ -7,6 +7,13 @@ import VueI18n from 'vue-i18n'
 import zhCN from './lang/zh-cn/index'
 import EN from './lang/en/index'
 
+import 'muse-ui/lib/styles/base.less';
+import { Button, Select } from 'muse-ui';
+import 'muse-ui/lib/styles/theme.less';
+
+Vue.use(Button);
+Vue.use(Select);
+
 Vue.use(VueI18n)
 
 Vue.config.productionTip = false
@@ -25,7 +32,7 @@ const i18n = new VueI18n({
 /* eslint-disable no-new */
 const init = new Vue({
   el: '#app',
-  // i18n,
+  i18n,
   store,
   router,
   render: h => h(App)
